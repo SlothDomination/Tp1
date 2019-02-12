@@ -28,22 +28,22 @@
 }
 
 .rectangle:nth-child(1) {
-    background-color: #e54792;
+    background-color: #ff0066;
     animation: anim1 0.5s;
 }
 
 .rectangle:nth-child(2) {
-    background-color: #f59723;
+    background-color: #b30047;
     animation: anim2 0.5s 0.5s backwards;
 }
 
 .rectangle:nth-child(3) {
-    background-color: #58b34c;
+    background-color: #b30047;
     animation: anim3 0.5s 1s backwards;
 }
 
 .rectangle:nth-child(4) {
-    background-color: #006d98;
+    background-color: #330014;
     font-size: 1em;
     /* max-height : 20vh;*/
 

@@ -2,6 +2,7 @@ import {
     Util
 } from './Util.js'
 
+//console.log("anim");
 
 export class AnimLettre {
 
@@ -17,33 +18,34 @@ export class AnimLettre {
     constructor(lesLettres, elementParent, fonction) {
         //Récupérer les valeurs passées en paramètre			
         this.lesLettres = lesLettres;
-      
+        console.log("lettres =" + lesLettres);
         this.elmParent = elementParent;
         this.Anim_lettres(this.lesLettres);//permet de lancer l'animation
         this.fonction = fonction;
     }
-
+    
+   
 
     Anim_lettres(lesLettres) {
         /* Création des élément DOM qui seront animés. 
         Les éléments seront intégré dans le conteneur elmParent
         */
-        console.log('mot');
+        //console.log('mot');
         let elmConteneur = this.creerElement(this.elmParent,
             'section'/*balise*/,
             '',/*contenu*/
             'mot'/*classe*/);
+            let i = 0;
+            let nbLettres = lesLettres.length;
 
-            console.log("yay")
+            //console.log("yay");
 
             //boucle for
-            for (let uneLettre of lesLettres){			
-                uneLettre.style.animationDelay = (i * 0.5) + "s";               
+            for (let uneLettre of lesLettres){	
+                let elmLettre = this.creerElement(elmConteneur, 'div', uneLettre, 'mot');//creer une balise div pour les lettres du string les ajoutant une à la fois au div et leur donnant une classe mot quand on les ajoute au div.		
+                elmLettre.style.animationDelay = (i * 0.5) + "s";      
+                i++;//incremente pour aller a la prochaine lettre du string         
             }
-
-        /* On garde une référence sur la fonction terminerIntro */
-        let refTerminerIntro = this.terminerIntro.bind(this);
-        elmBouton.addEventListener('mousedown', this.terminerIntro.bind(this));
     }
 
     creerElement(elmParent, balise, contenu, classCSS) {
@@ -56,15 +58,4 @@ export class AnimLettre {
         elmParent.appendChild(noeud);
         return noeud;
     }
-
-    terminerIntro(evt) {
-        this.elmParent.firstChild.classList.add('deplacementContenuIntro');
-        this.elmParent.firstChild.addEventListener('animationend', this.passerVersAnimationSuivante.bind(this));
-    }
-
-    passerVersAnimationSuivante(evt) {
-        Util.detruireTousLesNoeud(this.elmParent, this.elmParent);
-        this.fonction();
-    }
-
 }
