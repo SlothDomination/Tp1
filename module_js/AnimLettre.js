@@ -52,9 +52,12 @@ export class AnimLettre {
         console.log(balise);
         let noeud = document.createElement(balise);
         if (contenu != '') {
-            noeud.innerHTML = contenu
+            noeud.innerHTML = contenu;
         };
-        noeud.classList.add(classCSS);
+        if(classCSS != ''){
+            noeud.classList.add(classCSS);
+        }
+
         elmParent.appendChild(noeud);
         return noeud;
     }
