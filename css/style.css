@@ -950,6 +950,10 @@ body {
   font-size: 150%;
 }
 
+.content {
+  color: #ffcce0;
+}
+
 .header,
 .footer {
   background-color: #1a000a;
