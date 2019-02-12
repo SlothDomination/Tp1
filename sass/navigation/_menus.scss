@@ -9,3 +9,7 @@
 .menu a:first-child {
 	border-top: 1px solid white;
 }
+
+.menu a:hover {
+	background-color:$color__background-menu-nav-hover;
+}

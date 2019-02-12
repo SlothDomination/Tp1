@@ -477,6 +477,10 @@ a:hover, a:active {
   border-top: 1px solid white;
 }
 
+.menu a:hover {
+  background-color: #e6005c;
+}
+
 /*--------------------------------------------------------------
 # animation
 --------------------------------------------------------------*/
@@ -784,7 +788,7 @@ body {
 }
 
 .menu {
-  background-color: #8d4b4b;
+  background-color: #330014;
   text-align: center;
   /*Pour cet exemple, on fixe la largeur du menu à 100% ou 100vw*/
   width: 100vw;
