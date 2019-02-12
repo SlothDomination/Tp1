@@ -943,7 +943,7 @@ body {
 }
 
 .box {
-  background-color: #444;
+  background-color: #1a000a;
   color: #fff;
   border-radius: 5px;
   padding: 10px;
@@ -952,11 +952,11 @@ body {
 
 .header,
 .footer {
-  background-color: #999;
+  background-color: #1a000a;
 }
 
 .sidebar2 {
-  background-color: #ccc;
-  color: #444;
+  background-color: #1a000a;
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
