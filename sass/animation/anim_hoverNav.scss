@@ -1,0 +1,12 @@
+.menu a:hover{
+    animation-name: hoverNav;
+    animation-duration: 0.1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hoverNav{
+    0% {background-color: $color__menu-nav;}
+	25% {background-image: linear-gradient(to left, white, #DEC8F6, #DEC8F6, #DEC8F6, #DEC8F6);}
+	50% {background-image: linear-gradient(to left, white, white, #DEC8F6);}
+    100% {background-color:$color__background-menu-nav-hover; color:#ffcce0;}
+}
