@@ -69,6 +69,10 @@ body {
 	grid-area: content;
 }
 
+.content2 {
+	grid-area: content2;
+}
+
 .header {
 	grid-area: header;
 }
@@ -99,6 +103,7 @@ body {
 			"header"
 			"sidebar"
 			"content"
+			"content2"
 			"footer"
 }
 
@@ -108,7 +113,9 @@ body {
 		grid-template-columns: 50% auto;
 		grid-template-areas:
 			"header   header"
-			"sidebar  content"
+			"content content2"
+			"content3  content4"
+			"content5 content6"
 			"footer   footer";
 
 		min-width: 500px;
@@ -155,10 +162,11 @@ body {
 
 	.conteneur {
 		grid-gap: 20px;
-		grid-template-columns: 20em auto;
+		grid-template-columns: auto auto auto;
 		grid-template-areas:
 			"header  header  header"
-			"sidebar content sidebar2"
+			"content content2 content3"
+			"content4 content5 content6"
 			"footer  footer  footer";
 		max-width: 100%;
 	}
@@ -168,7 +176,7 @@ body {
 	/*background-color: rgb(241, 163, 171);*/
 	color: #fff;
 	border: 0.5em solid #DAC4F2;
-	border-image: linear-gradient(to bottom,  #DAC4F2, #FFEDED) 1 100%;
+	/*border-image: linear-gradient(to bottom,  #DAC4F2, #FFEDED) 1 100%;*/
 	border-radius: 5px;
 	padding: 10px;
 	font-size: 150%;
