@@ -832,12 +832,6 @@ body {
   grid-area: sidebar;
 }
 
-.sidebar2 {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  grid-area: sidebar2;
-}
-
 .content {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
@@ -851,7 +845,7 @@ body {
 }
 
 .footer {
-  -ms-grid-row: 5;
+  -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: footer;
 }
@@ -880,14 +874,14 @@ body {
   display: grid;
   width: 100vw;
   grid-gap: 1em;
-      grid-template-areas: "header" "sidebar" "content" "sidebar2" "footer";
+      grid-template-areas: "header" "sidebar" "content" "footer";
 }
 
 @media only screen and (min-width: 500px) {
   .conteneur {
-    -ms-grid-columns: 20% auto;
-        grid-template-columns: 20% auto;
-        grid-template-areas: "header   header" "sidebar  content" "sidebar2 sidebar2" "footer   footer";
+    -ms-grid-columns: 50% auto;
+        grid-template-columns: 50% auto;
+        grid-template-areas: "header   header" "sidebar  content" "footer   footer";
     min-width: 500px;
   }
 }
@@ -936,8 +930,8 @@ body {
   }
   .conteneur {
     grid-gap: 20px;
-    -ms-grid-columns: 120px auto 120px;
-        grid-template-columns: 120px auto 120px;
+    -ms-grid-columns: 20em auto;
+        grid-template-columns: 20em auto;
         grid-template-areas: "header  header  header" "sidebar content sidebar2" "footer  footer  footer";
     max-width: 100%;
   }
@@ -958,10 +952,5 @@ body {
 .header,
 .footer {
   background-color: #1a000a;
-}
-
-.sidebar2 {
-  background-color: #1a000a;
-  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */

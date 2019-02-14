@@ -1,6 +1,4 @@
-import {
-    Util
-} from './Util.js'
+import {Util} from './Util.js'
 
 
 export class Introduction {
@@ -14,14 +12,16 @@ export class Introduction {
      }}
      */
 
+     //(quand fait new introduction le constructer est appelé automatiquement)
     constructor(o, elementParent, fonction) {
-        //Récupérer les valeurs passées en paramètre			
+        //Récupérer les valeurs passées en paramètre		
+        //this.indicateur = recupere valeur	
         this.titrePrincipal = o.titrePrincipal;
         this.titreSecondaire = o.titreSecondaire;
         this.titreTernaire = o.titreTernaire;
         this.description = o.description;
         this.elmParent = elementParent;
-        this.integrerIntro();//permet de lancer l'animation
+        this.integrerIntro();//permet de lancer l'animation -> appele une fonction
         this.fonction = fonction;
     }
 
@@ -67,6 +67,7 @@ export class Introduction {
     }
 
     creerElement(elmParent, balise, contenu, classCSS) {
+        //(parent, titre balise, truc dedans balise, nom de la classe qui l'anim dans CSS -> classe ne peut pas être vide)
         console.log(balise);
         let noeud = document.createElement(balise);
         if (contenu != '') {
@@ -84,6 +85,7 @@ export class Introduction {
 
     passerVersAnimationSuivante(evt) {
         Util.detruireTousLesNoeud(this.elmParent, this.elmParent);
+        /*code.fonction statiques sinon new NomFonction(creer un instance)*/
         this.fonction();
     }
 
