@@ -6,8 +6,8 @@ import {AnimTextFooter} from './AnimTextFooter.js';
 
 /* l'élement de la page qui contiendra les éléments créés dynamiquement */
 let elmHeader = document.querySelector('.header');
-let intro = new Introduction(contenuIntro, elmHeader, animationLettre);/*intro(truc, truc, suivante anim a jouer) */
-
+//let intro = new Introduction(contenuIntro, elmHeader, animationLettre);/*intro(truc, truc, suivante anim a jouer) */
+let intro = new AnimTextFooter(contenuIntro, elmHeader, animationLettre);
 // debutQuestionnaire()
 
 function animationLettre()
