@@ -5,6 +5,7 @@ body {
 	/*Conteneur flex en colonne*/
 	display: flex;
 	flex-direction: column;
+	background-color:  #FFEDED;
 }
 
 .global {
@@ -77,7 +78,7 @@ body {
 }
 
 .conteneur {
-	background-color: #fff;
+	background-color:  #FFEDED;
 	color: #444;
 }
 /* conteneur est un élément flex et en même temps un conteneur grid */
@@ -164,18 +165,31 @@ body {
 }
 
 .box {
-	background-color:  #1a000a;
+	/*background-color: rgb(241, 163, 171);*/
 	color: #fff;
+	border: 0.5em solid #DAC4F2;
+	border-image: linear-gradient(to bottom,  #DAC4F2, #FFEDED) 1 100%;
 	border-radius: 5px;
 	padding: 10px;
 	font-size: 150%;
 }
 
-.content{
-	color:#ffcce0;
+.sidebar{
+	background-color:  #DAC4F2;
+	color:#4B152F;
+	border:none;
+	padding-top:3vh;
+	height:80%;
 }
 
-.header,
+.content{
+	color:#ffcce0;
+	
+}
+
 .footer {
-	background-color:  #1a000a;
+	background-image:linear-gradient(to right, #DAC4F2,  #FFEDED, #FFEDED);
+	width:100%;
+	color:#4B152F;
+	border:none;
 }

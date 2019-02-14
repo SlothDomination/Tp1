@@ -467,7 +467,7 @@ a:hover, a:active {
 --------------------------------------------------------------*/
 .menu a {
   text-decoration: none;
-  color: white;
+  color: #4B152F;
   border-bottom: 1px solid white;
   font-size: 1rem;
   padding: 0.5rem;
@@ -478,7 +478,7 @@ a:hover, a:active {
 }
 
 .menu a:hover {
-  background-color: #e6005c;
+  background-color: white;
   color: #ffcce0;
 }
 
@@ -750,6 +750,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: #FFEDED;
 }
 
 .global {
@@ -789,7 +790,7 @@ body {
 }
 
 .menu {
-  background-color: #330014;
+  background-color: #DEC8F6;
   text-align: center;
   /*Pour cet exemple, on fixe la largeur du menu à 100% ou 100vw*/
   width: 100vw;
@@ -851,7 +852,7 @@ body {
 }
 
 .conteneur {
-  background-color: #fff;
+  background-color: #FFEDED;
   color: #444;
 }
 
@@ -938,19 +939,34 @@ body {
 }
 
 .box {
-  background-color: #1a000a;
+  /*background-color: rgb(241, 163, 171);*/
   color: #fff;
+  border: 0.5em solid #DAC4F2;
+  -o-border-image: linear-gradient(to bottom, #DAC4F2, #FFEDED) 1 100%;
+     border-image: -webkit-gradient(linear, left top, left bottom, from(#DAC4F2), to(#FFEDED)) 1 100%;
+     border-image: linear-gradient(to bottom, #DAC4F2, #FFEDED) 1 100%;
   border-radius: 5px;
   padding: 10px;
   font-size: 150%;
+}
+
+.sidebar {
+  background-color: #DAC4F2;
+  color: #4B152F;
+  border: none;
+  padding-top: 3vh;
+  height: 80%;
 }
 
 .content {
   color: #ffcce0;
 }
 
-.header,
 .footer {
-  background-color: #1a000a;
+  background-image: -webkit-gradient(linear, left top, right top, from(#DAC4F2), color-stop(#FFEDED), to(#FFEDED));
+  background-image: linear-gradient(to right, #DAC4F2, #FFEDED, #FFEDED);
+  width: 100%;
+  color: #4B152F;
+  border: none;
 }
 /*# sourceMappingURL=style.css.map */
