@@ -7,12 +7,23 @@ import {AnimLettre} from './AnimLettre.js' //
 let elmSection = document.querySelector('section');
 let elmButton = document.querySelector("input[type='button']");
 let i = 0;
+
+
 elmButton.onmousedown = function (){	
 	if(i == 0){
 		console.log(i);
 		i++;
-		let intro = new Introduction(contenuIntro, elmSection, animationLettre);/*intro(truc, truc, suivante anim a jouer) */
+		let intro = new Introduction(contenuIntro, elmSection, animationLettre);//intro(truc, truc, suivante anim a jouer)
 	}
+
+	let elmDiv = document.querySelector("div.introduction");
+
+	if(elmDiv.style.display == "none" || elmDiv.style.display == ""){
+		elmDiv.style.display = "block";
+	}else{
+		elmDiv.style.display = "none";
+	}
+
 }
 
 // debutQuestionnaire()
