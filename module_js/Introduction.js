@@ -70,16 +70,4 @@ export class Introduction {
         elmParent.appendChild(noeud);
         return noeud;
     }
-
-    terminerIntro(evt) {
-        this.elmParent.firstChild.classList.add('deplacementContenuIntro');
-        this.elmParent.firstChild.addEventListener('animationend', this.passerVersAnimationSuivante.bind(this));
-    }
-
-    passerVersAnimationSuivante(evt) {
-        Util.detruireTousLesNoeud(this.elmParent, this.elmParent);
-        /*code.fonction statiques sinon new NomFonction(creer un instance)*/
-        this.fonction();
-    }
-
 }
