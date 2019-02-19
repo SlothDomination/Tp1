@@ -57,16 +57,6 @@ export class Introduction {
             'div',
             this.description,
             'rectangle');
-
-        let elmBouton = this.creerElement(elmConteneur,
-            'button',
-            'Commencer',
-            'bouton');
-            
-        /* On garde une référence sur la fonction terminerIntro */
-        let refTerminerIntro = this.terminerIntro.bind(this);
-        elmBouton.addEventListener('mousedown', this.terminerIntro.bind(this));
-       // let intro = new Introduction(contenuIntro, elmSection, animationLettre)
     }
 
     creerElement(elmParent, balise, contenu, classCSS) {
