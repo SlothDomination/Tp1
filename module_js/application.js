@@ -6,8 +6,13 @@ import {AnimLettre} from './AnimLettre.js' //
 /* l'élement de la page qui contiendra les éléments créés dynamiquement */
 let elmSection = document.querySelector('section');
 let elmButton = document.querySelector("input[type='button']");
-elmButton.onmousedown = function (){
-	let intro = new Introduction(contenuIntro, elmSection, animationLettre);/*intro(truc, truc, suivante anim a jouer) */
+let i = 0;
+elmButton.onmousedown = function (){	
+	if(i == 0){
+		console.log(i);
+		i++;
+		let intro = new Introduction(contenuIntro, elmSection, animationLettre);/*intro(truc, truc, suivante anim a jouer) */
+	}
 }
 
 // debutQuestionnaire()
