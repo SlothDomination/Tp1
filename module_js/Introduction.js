@@ -23,7 +23,6 @@ export class Introduction {
         this.elmParent = elementParent;
         this.integrerIntro();//permet de lancer l'animation -> appele une fonction
         this.fonction = fonction;
-        this.haha = document.querySelector("section.content");
     }
 
 
@@ -34,7 +33,7 @@ export class Introduction {
         console.log('introduction');
 
         let elmConteneur = this.creerElement(this.elmParent,
-            'section'/*balise*/,
+            'div'/*balise*/,
             '',/*contenu*/
             'introduction'/*classe*/);
 
@@ -59,7 +58,7 @@ export class Introduction {
             this.description,
             'rectangle');
 
-        let elmBouton = this.creerElement(this.haha,
+        let elmBouton = this.creerElement(elmConteneur,
             'button',
             'Commencer',
             'bouton');
@@ -67,6 +66,7 @@ export class Introduction {
         /* On garde une référence sur la fonction terminerIntro */
         let refTerminerIntro = this.terminerIntro.bind(this);
         elmBouton.addEventListener('mousedown', this.terminerIntro.bind(this));
+       // let intro = new Introduction(contenuIntro, elmSection, animationLettre)
     }
 
     creerElement(elmParent, balise, contenu, classCSS) {
