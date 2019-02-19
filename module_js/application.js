@@ -5,14 +5,17 @@ import {AnimLettre} from './AnimLettre.js' //
 
 /* l'élement de la page qui contiendra les éléments créés dynamiquement */
 let elmSection = document.querySelector('section');
+let elmFooter = document.querySelector('footer');
 //let elmButton = document.querySelector("input[type='button']");
 let i = 0;
+const lesLettres = '2019 - SlothDomination';
+let  monAnimLettre = new AnimLettre(lesLettres, elmFooter);/*(truc, conteneur parent, fonction)*/
 
 elmSection.onmousedown = function (){	
 	if(i == 0){
 		console.log(i);
 		i++;
-		let intro = new Introduction(contenuIntro, elmSection, animationLettre);//intro(truc, truc, suivante anim a jouer)
+		let intro = new Introduction(contenuIntro, elmSection);//intro(truc, truc, suivante anim a jouer)
 	}
 
 	let elmDiv = document.querySelector("div.introduction");
@@ -22,24 +25,12 @@ elmSection.onmousedown = function (){
 	}else{
 		elmDiv.style.display = "none";
 	}
-
 }
 
-// debutQuestionnaire()
-
-function animationLettre()
-{
-    /* Une fois que l'animation des mots est terminé la fonction animLettre s'exécutera */ 
-	console.log('debut animation lettre');
-	const lesLettres = 'Veille-technologique';
- 	let  monAnimLettre = new AnimLettre(lesLettres, elmSection, finAnim);/*(truc, conteneur parent, fonction)*/
-}
-
-
-function finAnim()
+/*function finAnim()
 {
 	console.log('animation terminée');
-}
+}*/
 
 
 
