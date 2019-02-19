@@ -5,11 +5,10 @@ import {AnimLettre} from './AnimLettre.js' //
 
 /* l'élement de la page qui contiendra les éléments créés dynamiquement */
 let elmSection = document.querySelector('section');
-let elmButton = document.querySelector("input[type='button']");
+//let elmButton = document.querySelector("input[type='button']");
 let i = 0;
 
-
-elmButton.onmousedown = function (){	
+elmSection.onmousedown = function (){	
 	if(i == 0){
 		console.log(i);
 		i++;
