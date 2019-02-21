@@ -2,9 +2,37 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    width: 25vw;
+    width: 14em;
+    height: auto;
     position:absolute;
-    top:7em;
+    top:5em;
+    font-size: 12pt;
+}
+
+@media only screen and (min-width: 500px) {
+    .introduction {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 14em;
+        height: auto;
+        position:absolute;
+        top:5em;
+        font-size: 16pt;
+    }    
+}
+
+@media only screen and (min-width: 900px) {
+    .introduction {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 20em;
+        height: auto;
+        position:absolute;
+        top:7em;
+        font-size: 16pt;
+    }    
 }
 
 .rectangle {
