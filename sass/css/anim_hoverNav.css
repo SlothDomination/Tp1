@@ -1,0 +1,19 @@
+.menu a:hover {
+  -webkit-animation-name: hoverNav;
+          animation-name: hoverNav;
+}
+
+@-webkit-keyframes hoverNav {
+  from {
+  }
+  to {
+  }
+}
+
+@keyframes hoverNav {
+  from {
+  }
+  to {
+  }
+}
+/*# sourceMappingURL=anim_hoverNav.css.map */

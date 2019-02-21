@@ -31,39 +31,16 @@ export class Introduction {
         Les éléments seront intégré dans le conteneur elmParent
         */
         console.log('introduction');
+
         let elmConteneur = this.creerElement(this.elmParent,
-            'section'/*balise*/,
+            'div'/*balise*/,
             '',/*contenu*/
             'introduction'/*classe*/);
-
-        let elmPrincipale = this.creerElement(elmConteneur,
-            'div',
-            this.titrePrincipal,
-            'rectangle');
-
-        let elmSecondaire = this.creerElement(elmConteneur,
-            'div',
-            this.titreSecondaire,
-            'rectangle');
-
-
-        let elmTernaire = this.creerElement(elmConteneur,
-            'div',
-            this.titreTernaire,
-            'rectangle');
 
         let elmDescription = this.creerElement(elmConteneur,
             'div',
             this.description,
             'rectangle');
-
-        let elmBouton = this.creerElement(elmConteneur,
-            'button',
-            'Commencer',
-            'bouton');
-        /* On garde une référence sur la fonction terminerIntro */
-        let refTerminerIntro = this.terminerIntro.bind(this);
-        elmBouton.addEventListener('mousedown', this.terminerIntro.bind(this));
     }
 
     creerElement(elmParent, balise, contenu, classCSS) {
@@ -77,16 +54,4 @@ export class Introduction {
         elmParent.appendChild(noeud);
         return noeud;
     }
-
-    terminerIntro(evt) {
-        this.elmParent.firstChild.classList.add('deplacementContenuIntro');
-        this.elmParent.firstChild.addEventListener('animationend', this.passerVersAnimationSuivante.bind(this));
-    }
-
-    passerVersAnimationSuivante(evt) {
-        Util.detruireTousLesNoeud(this.elmParent, this.elmParent);
-        /*code.fonction statiques sinon new NomFonction(creer un instance)*/
-        this.fonction();
-    }
-
 }

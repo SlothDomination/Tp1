@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,KAAK,CAAC,CAAC,AAAA,MAAM,CAAA;EACT,cAAc,EAAE,QAAQ;CAC3B;;AAED,UAAU,CAAV,QAAU;EACN,IAAI;;EAGJ,EAAE",
+    "sources": [
+        "../animation/anim_hoverNav.scss"
+    ],
+    "names": [],
+    "file": "anim_hoverNav.css"
+}
