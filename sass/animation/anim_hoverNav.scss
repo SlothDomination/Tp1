@@ -5,8 +5,8 @@
 }
 
 @keyframes hoverNav{
-    0% {background-color: $color__menu-nav;}
+    0% {background-color: #DEC8F6;}
 	25% {background-image: linear-gradient(to left, white, #DEC8F6, #DEC8F6, #DEC8F6, #DEC8F6);}
 	50% {background-image: linear-gradient(to left, white, white, #DEC8F6);}
-    100% {background-color:$color__background-menu-nav-hover; color:#ffcce0;}
-}
+    100% {background-color:white; color:#ffcce0;}
+}   
