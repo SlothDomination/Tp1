@@ -681,8 +681,7 @@ a:hover, a:active {
 }
 
 .mot > div {
-  font-size: 9vw;
-  text-shadow: 6px 2px 6px rgba(0, 0, 0, 0.7);
+  font-size: 13pt;
 }
 
 .mot:nth-child(1) > div {
@@ -690,11 +689,15 @@ a:hover, a:active {
           animation: animationLettre 1s both;
 }
 
+.mot > div:first-child {
+  padding-left: 1.5em;
+}
+
 @-webkit-keyframes animationLettre {
   from {
     /* opacity:  0; */
-    -webkit-transform: translateY(-75vw) rotate(180deg) scale(1);
-            transform: translateY(-75vw) rotate(180deg) scale(1);
+    -webkit-transform: translateY(20vw) rotate(180deg) scale(1);
+            transform: translateY(20vw) rotate(180deg) scale(1);
     -webkit-animation-timing-function: cubic-bezier(0.8, 0.01, 0.97, 0.19);
             animation-timing-function: cubic-bezier(0.8, 0.01, 0.97, 0.19);
   }
@@ -707,16 +710,16 @@ a:hover, a:active {
   }
   to {
     /* opacity:  1; */
-    -webkit-transform: translateY(0%) rotate(0deg) scale(1);
-            transform: translateY(0%) rotate(0deg) scale(1);
+    -webkit-transform: translateY(-3vh) rotate(0deg) scale(1);
+            transform: translateY(-3vh) rotate(0deg) scale(1);
   }
 }
 
 @keyframes animationLettre {
   from {
     /* opacity:  0; */
-    -webkit-transform: translateY(-75vw) rotate(180deg) scale(1);
-            transform: translateY(-75vw) rotate(180deg) scale(1);
+    -webkit-transform: translateY(20vw) rotate(180deg) scale(1);
+            transform: translateY(20vw) rotate(180deg) scale(1);
     -webkit-animation-timing-function: cubic-bezier(0.8, 0.01, 0.97, 0.19);
             animation-timing-function: cubic-bezier(0.8, 0.01, 0.97, 0.19);
   }
@@ -729,8 +732,8 @@ a:hover, a:active {
   }
   to {
     /* opacity:  1; */
-    -webkit-transform: translateY(0%) rotate(0deg) scale(1);
-            transform: translateY(0%) rotate(0deg) scale(1);
+    -webkit-transform: translateY(-3vh) rotate(0deg) scale(1);
+            transform: translateY(-3vh) rotate(0deg) scale(1);
   }
 }
 
@@ -956,6 +959,7 @@ body {
   width: 100%;
   color: #4B152F;
   border: none;
+  padding-left: 0.5em;
 }
 
 @media only screen and (min-width: 500px) {
@@ -967,6 +971,10 @@ body {
   }
   .box {
     padding: 0em;
+  }
+  .footer {
+    padding-top: 0;
+    padding-left: 0.5em;
   }
   .box img.img {
     max-width: 40vw;
@@ -1027,6 +1035,9 @@ body {
   .box {
     padding: 0;
     max-width: 30vw;
+  }
+  .footer {
+    padding-left: 0.5em;
   }
   .box img.img {
     max-width: 24vw;
