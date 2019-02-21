@@ -495,7 +495,9 @@ a:hover, a:active {
       justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 100vw;
+  width: 25vw;
+  position: absolute;
+  top: 7em;
 }
 
 .rectangle {
@@ -534,140 +536,25 @@ a:hover, a:active {
           animation: anim1 0.5s;
 }
 
-.rectangle:nth-child(2) {
-  background-color: #b30047;
-  -webkit-animation: anim2 0.5s 0.5s backwards;
-          animation: anim2 0.5s 0.5s backwards;
-}
-
-.rectangle:nth-child(3) {
-  background-color: #b30047;
-  -webkit-animation: anim3 0.5s 1s backwards;
-          animation: anim3 0.5s 1s backwards;
-}
-
-.rectangle:nth-child(4) {
-  background-color: #330014;
-  font-size: 1em;
-  /* max-height : 20vh;*/
-  -webkit-animation: animGo 1s 1.5s backwards;
-          animation: animGo 1s 1.5s backwards;
-}
-
-.deplacementContenuIntro {
-  -webkit-animation: deplacementContenuIntro 1s backwards;
-          animation: deplacementContenuIntro 1s backwards;
-}
-
 @-webkit-keyframes anim1 {
   from {
-    -webkit-transform: translateY(-50vh) rotate(-45deg);
-            transform: translateY(-50vh) rotate(-45deg);
+    -webkit-transform: translateX(-50vh);
+            transform: translateX(-50vh);
   }
   to {
-    -webkit-transform: translateY(0%) rotate(0);
-            transform: translateY(0%) rotate(0);
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
   }
 }
 
 @keyframes anim1 {
   from {
-    -webkit-transform: translateY(-50vh) rotate(-45deg);
-            transform: translateY(-50vh) rotate(-45deg);
+    -webkit-transform: translateX(-50vh);
+            transform: translateX(-50vh);
   }
   to {
-    -webkit-transform: translateY(0%) rotate(0);
-            transform: translateY(0%) rotate(0);
-  }
-}
-
-@-webkit-keyframes anim2 {
-  from {
-    -webkit-transform: translateX(-200%) rotate(-45deg);
-            transform: translateX(-200%) rotate(-45deg);
-  }
-  to {
-    -webkit-transform: translateX(0%) rotate(0);
-            transform: translateX(0%) rotate(0);
-  }
-}
-
-@keyframes anim2 {
-  from {
-    -webkit-transform: translateX(-200%) rotate(-45deg);
-            transform: translateX(-200%) rotate(-45deg);
-  }
-  to {
-    -webkit-transform: translateX(0%) rotate(0);
-            transform: translateX(0%) rotate(0);
-  }
-}
-
-@-webkit-keyframes anim3 {
-  from {
-    -webkit-transform: translateX(200%) rotate(-45deg);
-            transform: translateX(200%) rotate(-45deg);
-  }
-  to {
-    -webkit-transform: translateX(0%) rotate(0);
-            transform: translateX(0%) rotate(0);
-  }
-}
-
-@keyframes anim3 {
-  from {
-    -webkit-transform: translateX(200%) rotate(-45deg);
-            transform: translateX(200%) rotate(-45deg);
-  }
-  to {
-    -webkit-transform: translateX(0%) rotate(0);
-            transform: translateX(0%) rotate(0);
-  }
-}
-
-@-webkit-keyframes animGo {
-  from {
-    -webkit-transform: translateY(200vh) rotate(-45deg);
-            transform: translateY(200vh) rotate(-45deg);
-  }
-  50%,
-  to {
-    -webkit-transform: translateY(0%) rotate(0);
-            transform: translateY(0%) rotate(0);
-  }
-}
-
-@keyframes animGo {
-  from {
-    -webkit-transform: translateY(200vh) rotate(-45deg);
-            transform: translateY(200vh) rotate(-45deg);
-  }
-  50%,
-  to {
-    -webkit-transform: translateY(0%) rotate(0);
-            transform: translateY(0%) rotate(0);
-  }
-}
-
-@-webkit-keyframes deplacementContenuIntro {
-  from {
-    -webkit-transform: translateX(0vw);
-            transform: translateX(0vw);
-  }
-  to {
-    -webkit-transform: translateX(-100vw);
-            transform: translateX(-100vw);
-  }
-}
-
-@keyframes deplacementContenuIntro {
-  from {
-    -webkit-transform: translateX(0vw);
-            transform: translateX(0vw);
-  }
-  to {
-    -webkit-transform: translateX(-100vw);
-            transform: translateX(-100vw);
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
   }
 }
 
@@ -929,7 +816,14 @@ body {
   display: grid;
   width: 100vw;
   grid-gap: 1em;
-      grid-template-areas: "header" "content" "content2" "content3" "content4" "content5" "content6" "footer";
+      grid-template-areas: "header"
+ "content"
+ "content2"
+ "content3"
+ "content4"
+ "content5"
+ "content6"
+ "footer";
 }
 
 .box {
@@ -940,6 +834,7 @@ body {
   border-radius: 5px;
   padding: 0em;
   font-size: 150%;
+  position: relative;
 }
 
 .box img.img {
@@ -966,7 +861,11 @@ body {
   .conteneur {
     -ms-grid-columns: 50% auto;
         grid-template-columns: 50% auto;
-        grid-template-areas: "header header" "content content2" "content3  content4" "content5 content6" "footer   footer";
+        grid-template-areas: "header header"
+ "content content2"
+ "content3  content4"
+ "content5 content6"
+ "footer   footer";
     min-width: 500px;
   }
   .box {
@@ -1029,7 +928,10 @@ body {
     grid-gap: 20px;
     -ms-grid-columns: auto auto auto;
         grid-template-columns: auto auto auto;
-        grid-template-areas: "header header header" "content content2 content3" "content4 content5 content6" "footer  footer  footer";
+        grid-template-areas: "header header header"
+ "content content2 content3"
+ "content4 content5 content6"
+ "footer  footer  footer";
     max-width: 100%;
   }
   .box {
