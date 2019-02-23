@@ -1,10 +1,11 @@
 /* Contenu intro est un objet litéral qui contiendra 
     les éléments d'introduction
 */
+let idImage = document.querySelector('section').id;
+let Auteurs = ["CRISALYS", "Inconnu", "Ilya Kuvshinov", "meyoco", "tofuvi", "Inconnu"];
+
 
 export const contenuIntro = {
-	titrePrincipal : "Introduction aux modules",
-	titreSecondaire : "TP1  ",
-	titreTernaire : "TIM-640",
-	description : "Dans le cadre du cours « Programmation et veille technologique » Cette animation permettra dd tester le fonctionnement des « classes » des « modules et des fonction fléchées  . "
+	description : "Auteur: " + Auteurs[idImage]
+
 }
