@@ -878,8 +878,8 @@ body {
 }
 
 .footer {
-  background-image: -webkit-gradient(linear, left top, right top, from(#DAC4F2), color-stop(#DAC4F2), to(#FFEDED));
-  background-image: linear-gradient(to right, #DAC4F2, #DAC4F2, #FFEDED);
+  background-image: -webkit-gradient(linear, left top, right top, from(black), color-stop(black), to(#FFEDED));
+  background-image: linear-gradient(to right, black, black, #FFEDED);
   width: 100%;
   color: #4B152F;
   border: none;
