@@ -22,7 +22,7 @@ body {
 	}
 
 	.boutonBurger {
-		background: linear-gradient(to bottom, rgb(246, 200, 236) 0%, rgb(236, 145, 213) 20%, transparent 20%, transparent 40%, rgb(246, 200, 236) 40%, rgb(236, 145, 213) 60%, transparent 60%, transparent 80%, rgb(246, 200, 236) 80%, rgb(236, 145, 213) 100%);
+		background: linear-gradient(to bottom, black 0%, rgb(236, 145, 213) 20%, transparent 20%, transparent 40%, black 40%, rgb(236, 145, 213) 60%, transparent 60%, transparent 80%, black 80%, rgb(236, 145, 213) 100%);
 		height: 48px;
 		width: 48px;
 		margin: 1%;
@@ -114,7 +114,7 @@ body {
 .box {
 	/*background-color: rgb(241, 163, 171);*/
 	color: #fff;
-	border: 0.5em solid #DAC4F2;
+	border: 0.5em solid black;
 	/*border-image: linear-gradient(to bottom,  #DAC4F2, #FFEDED) 1 100%;*/
 	border-radius: 5px;
 	padding:0em;
