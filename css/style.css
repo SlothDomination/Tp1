@@ -723,7 +723,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #FFEDED;
+  background-color: #777373;
 }
 
 .global {
@@ -829,7 +829,7 @@ body {
 }
 
 .conteneur {
-  background-color: #FFEDED;
+  background-color: #777373;
   color: #444;
 }
 
@@ -855,6 +855,11 @@ body {
       grid-template-areas: "header" "content" "content2" "content3" "content4" "content5" "content6" "footer";
 }
 
+.sectionImage {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(#FFEDED));
+  background-image: linear-gradient(to bottom, black, #FFEDED);
+}
+
 .box {
   /*background-color: rgb(241, 163, 171);*/
   color: #fff;
@@ -878,8 +883,8 @@ body {
 }
 
 .footer {
-  background-image: -webkit-gradient(linear, left top, right top, from(black), color-stop(black), to(#FFEDED));
-  background-image: linear-gradient(to right, black, black, #FFEDED);
+  background-image: -webkit-gradient(linear, left top, right top, from(black), color-stop(black), to(#777373));
+  background-image: linear-gradient(to right, black, black, #777373);
   width: 100%;
   color: #FFEDED;
   border: none;
