@@ -881,7 +881,7 @@ body {
   background-image: -webkit-gradient(linear, left top, right top, from(black), color-stop(black), to(#FFEDED));
   background-image: linear-gradient(to right, black, black, #FFEDED);
   width: 100%;
-  color: #4B152F;
+  color: #FFEDED;
   border: none;
   padding-left: 0.5em;
 }
